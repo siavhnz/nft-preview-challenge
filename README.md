@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution: [frontendmentor.io](https://your-solution-url.com)
+- Solution: [frontendmentor.io](https://www.frontendmentor.io/solutions/nft-preview-card-component--YNNsrFAYE)
 - Live Site: [github.io](https://siavhnz.github.io/frontendmentor/2.nft-preview/index.html)
 
 ## My process
