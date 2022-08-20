@@ -113,6 +113,7 @@ I got better at using flexbox and relative values but I need more practice to gr
 ### Useful resources
 
 - [MDN Semantics article](https://developer.mozilla.org/en-US/docs/Glossary/Semantics) - To create a better HTML skeleton.
+
 [Content categories](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories) - This helped me to use the semantic HTML 5 elements where they were most proper.
 
 ## Author
