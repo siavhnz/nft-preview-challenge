@@ -54,7 +54,7 @@ Users should be able to:
 - Flexbox
 
 ### What I learned
-1.
+-
 
 >"HTML should be coded to represent the data that will be populated and not based on its default presentation styling. Presentation (how it should look), is the sole responsibility of CSS."
 > --<cite>[MDN][1]</cite>
@@ -64,7 +64,7 @@ I read [MDN Semantics article](https://developer.mozilla.org/en-US/docs/Glossary
 
 Other great stuff on this topic: [HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), [Content categories](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories), and [WHATWG Specification](https://html.spec.whatwg.org/#how-to-read-this-specification)
 
-2.
+-
 
 I Learned how to create an image with an overlay without losing the opacity of elements.
 
@@ -85,7 +85,8 @@ Second use position relative for image container
 
 Finally style the overlay container
 
-```.card .img-effect .overlay{
+```
+.card .img-effect .overlay{
   display: flex;
   align-items: center;
   justify-content: center;
