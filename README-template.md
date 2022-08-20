@@ -1,7 +1,6 @@
 # Frontend Mentor - NFT preview card component solution
 
-This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
+This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U).
 ## Table of contents
 
 - [Overview](#overview)
@@ -17,8 +16,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -30,83 +27,100 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![screenshot](./assets/images/screenshot.JPG)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution: [frontendmentor.io](https://your-solution-url.com)
+- Live Site: [github.io](https://siavhnz.github.io/frontendmentor/2.nft-preview/index.html)
 
 ## My process
+
+### Workflow
+ - Set up the project
+ - Create the skeleton of the HTML file
+ - mobile-first design
+ - Desktop design
+ - Compelete README.md file
+ - Push solution on github.com
+ - Publish solution on github.io and frontendmentor.io
+
 
 ### Built with
 
 - Semantic HTML5 markup
+  - main, article, figure, footer, address
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
+1.
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+>"HTML should be coded to represent the data that will be populated and not based on its default presentation styling. Presentation (how it should look), is the sole responsibility of CSS."
+> --<cite>[MDN][1]</cite>
 
-To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+I read [MDN Semantics article](https://developer.mozilla.org/en-US/docs/Glossary/Semantics) and tried to use semantic HTML5 markup.
+
+Other great stuff on this topic: [HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), [Content categories](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories), and [WHATWG Specification](https://html.spec.whatwg.org/#how-to-read-this-specification)
+
+2.
+
+I Learned how to create an image with an overlay without losing the opacity of elements.
+
+First use a rgba instead of rgb to control the opacity of overlay tags
+
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
+:root {
+  --overlay: rgba(0, 255, 247, .5);
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+Second use position relative for image container
+
+```
+.card .img-effect{
+  position: relative;
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+Finally style the overlay container
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```.card .img-effect .overlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: var(--overlay);
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+.card .img-effect:hover .overlay{
+  cursor: pointer;
+  opacity:1;
+  transition: opacity 0.5s;
+}
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I got better at using flexbox and relative values but I need more practice to grasp completely all the concepts that these attributes offer. Also, I need to read more about HTML5 semantics to create a better HTML skeleton.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [MDN Semantics article](https://developer.mozilla.org/en-US/docs/Glossary/Semantics) - To create a better HTML skeleton.
+[Content categories](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories) - This helped me to use the semantic HTML 5 elements where they were most proper.
 
 ## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Frontend Mentor - [@siavhnz](https://www.frontendmentor.io/profile/siavhnz)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+[Frontendmentor.io](https://www.frontendmentor.io/challenges) for their Excitement challenges  
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+[Perfect Pixel](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en) for such a great extension
+
+[1]: https://developer.mozilla.org/en-US/docs/Glossary/Semantics
