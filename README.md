@@ -54,19 +54,16 @@ Users should be able to:
 - Flexbox
 
 ### What I learned
--
 
 >"HTML should be coded to represent the data that will be populated and not based on its default presentation styling. Presentation (how it should look), is the sole responsibility of CSS."
 > --<cite>[MDN][1]</cite>
 
 
-I read [MDN Semantics article](https://developer.mozilla.org/en-US/docs/Glossary/Semantics) and tried to use semantic HTML5 markup.
+- I read [MDN Semantics article](https://developer.mozilla.org/en-US/docs/Glossary/Semantics) and tried to use semantic HTML5 markup.
 
 Other great stuff on this topic: [HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), [Content categories](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories), and [WHATWG Specification](https://html.spec.whatwg.org/#how-to-read-this-specification)
 
--
-
-I Learned how to create an image with an overlay without losing the opacity of elements.
+- I Learned how to create an image with an overlay without losing the opacity of elements.
 
 First use a rgba instead of rgb to control the opacity of overlay tags
 
@@ -114,7 +111,7 @@ I got better at using flexbox and relative values but I need more practice to gr
 
 - [MDN Semantics article](https://developer.mozilla.org/en-US/docs/Glossary/Semantics) - To create a better HTML skeleton.
 
-[Content categories](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories) - This helped me to use the semantic HTML 5 elements where they were most proper.
+- [Content categories](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories) - This helped me to use the semantic HTML 5 elements where they were most proper.
 
 ## Author
 - Frontend Mentor - [@siavhnz](https://www.frontendmentor.io/profile/siavhnz)
